@@ -34,9 +34,11 @@ export default function DocsAside({
       <div className="mt-4">
         <button
           onClick={() => setEcommerceExpanded(!ecommerceExpanded)}
-          className="flex items-center text-md font-bold py-1 px-2 rounded hover:bg-slate-500/60 text-white w-full text-left "
+          className="flex items-center justify-between text-md font-bold py-1 px-2 rounded hover:bg-slate-500/60 text-white w-full "
         >
-          Ecommerce {ecommerceExpanded ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
+          <span>Ecommerce</span>
+
+          {ecommerceExpanded ? <ChevronDown /> : <ChevronRight />}
         </button>
         {ecommerceExpanded && (
           <div className="ml-4 mt-2">

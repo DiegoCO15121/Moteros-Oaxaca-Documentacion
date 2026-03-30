@@ -14,6 +14,8 @@ export function getDocBySlug(slug: string): DocData {
 
   const filePath = path.join(docsPath, `${decodedSlug}.md`);
 
+  console.log(filePath)
+
   if (!fs.existsSync(filePath)) {
     throw new Error(`File not found: ${filePath}`);
   }
