@@ -1,7 +1,8 @@
 @import "tailwindcss";
-@source "../../app/**/*.{ts,tsx,mdx}";
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+@source "./**/*.{ts,tsx,mdx}";
 @plugin "@tailwindcss/typography";
-@source "../../docs/**/*.md";
+@source "../docs/**/*.md";
 
 @layer components {
   .prose img {
