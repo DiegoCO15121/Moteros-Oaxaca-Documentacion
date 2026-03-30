@@ -8,7 +8,7 @@ venta dentro del sistema web de Moteros Oaxaca. El objetivo de esta guía
 es proporcionar instrucciones claras y precisas que faciliten la
 operación diaria del sistema.
 
-## 1.1 Roles del Sistema
+### 1.1 Roles del Sistema
 
 El sistema cuenta con diferentes roles de usuario, cada uno con permisos
 específicos:
@@ -26,7 +26,7 @@ específicos:
                        ventas directamente.
   -------------------- -----------------------------------------------
 
-# 2. Flujo de Venta
+## 2. Flujo de Venta
 
 A continuación, se describe paso a paso el proceso que debe seguir el
 usuario vendedor para registrar una venta de forma exitosa en el
@@ -52,7 +52,7 @@ Productos para agregar los artículos deseados al carrito de compra.
 
   --------------------------------------------------------------------
 
-![](/images/image1.png)
+![](/images/ventas1.png)
 
 Al agregar uno o varios productos al carrito, estos se mostrarán en un
 panel lateral ubicado en el lado derecho de la pantalla. Desde este
@@ -63,7 +63,7 @@ salir de la sección de productos:
 
 - Eliminar un producto del carrito.
 
-![](/images/image2.png)
+![](/images/ventas2.png)
 
 **Paso 3: Revisión del Carrito de Compra**
 
@@ -94,7 +94,7 @@ realizar las siguientes acciones antes de proceder con la venta:
 
 - Guardar o descargar una cotización si el cliente así lo requiere.
 
-![](/images/image3.png)
+![](/images/ventas3.png)
 
 Una vez que el usuario haya validado la información del carrito, deberá
 hacer clic en el botón \"Continuar con el Checkout\" para avanzar al
@@ -110,24 +110,25 @@ etapa son los siguientes:
 
 - Método de entrega: En tienda, Pedido Local o Pedido Foráneo.
 
-![](/images/image4.png)
+![](/images/ventas4.png)
 
-## 2.1 Variantes según Forma de Pago
+### 2.1 Variantes según Forma de Pago
 
 Los campos del formulario de checkout pueden variar dependiendo de la
 forma de pago seleccionada por el cliente. A continuación se muestran
 las diferentes variantes disponibles. Cabe mencionar que los pagos con
 tarjeta de crédito y débito comparten los mismos campos de captura.
 
-![](/images/image5.png)
+![](/images/ventas5.png)
+![](/images/ventas6.png)
 
-## 2.2 Variantes según Método de Entrega
+### 2.2 Variantes según Método de Entrega
 
 De igual forma, los campos del formulario también pueden cambiar en
 función del método de entrega seleccionado. A continuación se muestra la
 variante correspondiente.
 
-![](/images/image7.png)
+![](/images/ventas7.png)
 
 **Paso 5: Finalización de la Venta**
 
@@ -143,12 +144,12 @@ continuación, hacer clic en el botón \"Finalizar Venta\".
 
   --------------------------------------------------------------------
 
-![](/images/image8.png)
+![](/images/ventas8.png)
 
 Si toda la información es correcta, la venta se registrará de manera
 exitosa en el sistema y el proceso habrá concluido.
 
-# ## 3. Resumen del Proceso
+## 3. Resumen del Proceso
 
 A modo de referencia rápida, el flujo de venta en el sistema sigue el
 siguiente orden:

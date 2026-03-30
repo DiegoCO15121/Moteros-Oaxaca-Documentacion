@@ -8,12 +8,12 @@ traspaso de productos dentro del sistema web de Moteros Oaxaca. El
 objetivo de esta guía es proporcionar instrucciones claras y precisas
 que faciliten la operación diaria del sistema.
 
-# 2. Flujo de Traspaso de Productos
+## 2. Flujo de Traspaso de Productos
 
 A continuación, se describe paso a paso el proceso que debe seguir el
 usuario vendedor para hacer un traspaso de forma exitosa en el sistema.
 
-## **2.1 Traspaso de Productos**
+### 2.1 Traspaso de Productos
 
 **Paso 1: Identificación del producto a traspasar**
 
@@ -22,13 +22,13 @@ debe ubicar el producto del cual quiere hacer traspasos. Una vez
 identificado el producto, el usuario hará clic en el kardex del
 producto.
 
-![](/images/image1.png)
+![](/images/traspaso1.png)
 
 Una vez dentro del kardex del producto el usuario puede filtrar los
 movimientos que se han hecho relacionados al producto mediante los
 filtros ubicados en la parte superior del sistema.
 
-![](/images/image2.png)
+![](/images/traspaso2.png)
 
 **Paso 2: Ejecución del Traspaso**
 
@@ -48,7 +48,7 @@ usuario vendedor deberá seguir los siguientes pasos:
 
 - Presionar "Guardar".
 
-![](/images/image3.png)
+![](/images/traspaso3.png)
 
 **Paso 3: Envío de Producto (detalles del kardex)**
 
@@ -58,9 +58,9 @@ la información y además tendrá la posibilidad de cargar una imagen de la
 evidencia del traspaso (no es obligatorio) y poder modificar la cantidad
 del traspaso asi como detallar el movimiento de este mismo.
 
-![](/images/image4.png)
+![](/images/traspaso4.png)
 
-![](/images/image5.png)
+![](/images/traspaso5.png)
 
 Cuando el usuario vendedor haya confirmado que toda la información del
 detalle es válida, debe presionar el botón "Enviar" y se le notificará a
@@ -74,7 +74,7 @@ En caso de que el usuario presione el botón "Lista", este será
 redirigido al dashboard de traspasos y el traspaso quedará en estado de
 pendiente, esperando por una confirmación o cancelación del proceso.
 
-![](/images/image6.png)
+![](/images/traspaso6.png)
 
 En caso de que el usuario quiera cancelar o proceder con el proceso,
 deberá presionar el botón "i" y el usuario será redirigido al detalle de
@@ -84,9 +84,9 @@ En caso de confirmar el proceso de traspaso, el sistema actualizara el
 estado del traspaso a "Enviado" y la cantidad de producto disponible en
 la sucursal se reduce según la cantidad que se haya enviado.
 
-![](/images/image7.png)
+![](/images/traspaso7.png)
 
-![](/images/image8.png)
+![](/images/traspaso8.png)
 
 **Paso 4: Proceder con el Traspaso (sucursal de destino)**
 
@@ -94,9 +94,9 @@ En el sistema de la sucursal de destino se le notificara al usuario
 vendedor que una sucursal le ha hecho un traspaso de producto (la
 notificación también podrá ser vista desde la sección de notificaciones)
 
-![](/images/image9.png)
+![](/images/traspaso9.png)
 
-![](/images/image10.png)
+![](/images/traspaso10.png)
 
 Para proceder se puede presionar en la notificación (en caso de usar el
 acceso rápido ubicado en la parte superior derecha) o presionar el botón
@@ -109,9 +109,9 @@ será redirigido al detalle del Kardex del traspaso y este tendrá la
 posibilidad de subir evidencia sobre el traspaso del producto y también
 detallar el movimiento.
 
-![](/images/image11.png)
+![](/images/traspaso11.png)
 
-![](/images/image12.png)
+![](/images/traspaso12.png)
 
 **Paso 5.1: Flujo de rechazo de traspaso**
 
@@ -119,22 +119,23 @@ En caso de que el usuario presione el botón "Rechazar". El sistema
 mostrará un mensaje con múltiples opciones que el usuario vendedor
 deberá elegir según sea el caso.
 
-![](/images/image13.png)
+![](/images/traspaso13.p  ng)
 
 En caso de que el usuario seleccione "Devolver" o "No llegó", el estado
 del traspaso se actualizará como envío fallido y el stock del producto
 restado será devuelto a su estado antes de hacer el traspaso.
 
-![](/images/image14.png)
+![](/images/traspaso14.png)
+![](/images/solicitud14.png)
 
 **Paso 5.2: Flujo de aceptación del traspaso**
 
 Cuando el usuario presione el botón de "Recibido", el estado del
 traspaso pasa a ser finalizado.
 
-![](/images/image16.png)
+![](/images/traspaso15.png)
 
-![](/images/image17.png)
+![](/images/traspaso16.png)
 
   --------------------------------------------------------------------
   **Nota:** El stock del producto de la tienda que hizo el traspaso se
@@ -143,8 +144,7 @@ traspaso pasa a ser finalizado.
   según la cantidad de piezas de producto enviada.
 
   --------------------------------------------------------------------
-
-# ## 3. Resumen del Proceso
+## 3. Resumen del Proceso
 
 A modo de referencia rápida, el flujo de traspaso en el sistema sigue el
 siguiente orden:

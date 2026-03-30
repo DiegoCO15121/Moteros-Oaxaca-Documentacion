@@ -20,13 +20,13 @@ de Administrador. A continuación, se describe el rol relevante:
                         las sucursales.
   --------------------- -------------------------------------------------
 
-2\. Uso del Módulo de Sucursales.
+## 2. Uso del Módulo de Sucursales.
 
 A continuación, se describe paso a paso cómo el Administrador puede
 utilizar el módulo de Sucursales: acceder al dashboard y consultar la
 información de las sucursales, así como también crearlas.
 
-2.1 Acceso al Módulo de Sucursales
+### 2.1 Acceso al Módulo de Sucursales
 
 **Paso 1: Navegar al módulo**
 
@@ -35,15 +35,15 @@ hacer clic en la opción \"Sucursales\". Al seleccionarla, el sistema
 redirige automáticamente al dashboard del módulo, donde se muestran
 todas las sucursales.
 
-![](/images/image1.png)
+![](/images/sucursales1.png)
 
-2.2 Dashboard: Sucursales
+### 2.2 Dashboard: Sucursales
 
 El dashboard del módulo de Sucursales presenta una tabla con toda la
 información de sucursales y también unos botones de acción con los
 cuales se pueden editar o eliminar las sucursales.
 
-![](/images/image2.png)
+![](/images/sucursales2.png)
 
 ### 2.3 Crear Sucursales
 
@@ -52,11 +52,11 @@ este será redirigido a un formulario para proporcionar información de la
 nueva sucursal. El usuario deberá presionar en el botón "Guardar"para
 poder crear la sucursal.
 
-![](/images/image3.png)
+![](/images/sucursales3.png)
 
-![](/images/image4.png)
+![](/images/sucursales4.png)
 
-2.4 Ajustar los datos de una sucursal
+### 2.4 Ajustar los datos de una sucursal
 
 **Paso 1: Presionar sobre icono de lápiz**
 
@@ -68,7 +68,7 @@ al usuario a un formulario.
 
 El formulario se carga con datos de la sucursal para poder modificarlas.
 
-![](/images/image5.png)
+![](/images/sucursales5.png)
 
   -----------------------------------------------------------------------
   **Nota:** La dirección IP del formulario es la dirección IP para
@@ -84,9 +84,9 @@ de basura en la sucursal que desea eliminar y presionarlo para que el
 sistema lo redirija a ver un resumen de la información de la sucursal a
 eliminar y confirmar la eliminación.
 
-![](/images/image6.png)
+![](/images/sucursales6.png)
 
-3\. Resumen del Proceso
+## 3. Resumen del Proceso
 
 A modo de referencia rápida, el flujo de uso del módulo de Sucursal
 sigue el siguiente orden:
