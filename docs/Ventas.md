@@ -3,7 +3,7 @@
 ## 1. Introducción
 
 El presente documento describe de manera detallada el proceso que debe
-seguir un usuario con el rol de vendedor (seller) para registrar una
+seguir un usuario con el rol de vendedor para registrar una
 venta dentro del sistema web de Moteros Oaxaca. El objetivo de esta guía
 es proporcionar instrucciones claras y precisas que faciliten la
 operación diaria del sistema.
@@ -20,10 +20,6 @@ específicos:
                       las ventas en el sistema. Tiene acceso completo
                        al flujo de venta descrito en este manual.
 
-  **Administrador**    Tiene permisos para visualizar, editar y
-                       eliminar productos, ponerlos en exhibición y
-                       consultar el kardex del inventario. No realiza
-                       ventas directamente.
   -------------------- -----------------------------------------------
 
 ## 2. Flujo de Venta

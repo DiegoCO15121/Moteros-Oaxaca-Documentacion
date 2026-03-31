@@ -18,7 +18,7 @@ describe el rol relevante:
 
   -----------------------------------------------------------------------
   **Rol**               **Permisos y Funciones**
-  --------------------- -------------------------------------------------
+
   **Administrador**     Tiene acceso exclusivo al módulo de Ecommerce.
                         Puede gestionar todos los contenidos de la tienda
                         en línea, incluyendo la creación, edición y

@@ -42,6 +42,7 @@ jornada de ventas.
 ![](/images/caja4.png)
 
   --------------------------------------------------------------------
-  Nota: Es indispensable realizar apertura de caja para realizar
+  **Nota:** Es indispensable realizar apertura de caja para realizar
   ventas, devoluciones, facturaciones y cotizaciones en línea.
+  
   --------------------------------------------------------------------

@@ -68,6 +68,7 @@ del usuario.
   -----------------------------------------------------------------------
   **Nota:** Solo el administrador del sistema puede cambiar el tipo de
   cliente y el crédito motero.
+  
   -----------------------------------------------------------------------
 
 ### 2.5 Eliminar cliente

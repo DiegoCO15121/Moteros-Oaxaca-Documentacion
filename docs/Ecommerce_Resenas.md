@@ -18,7 +18,7 @@ describe el rol relevante:
 
   -----------------------------------------------------------------------
   **Rol**               **Permisos y Funciones**
-  --------------------- -------------------------------------------------
+
   **Administrador**     Tiene acceso exclusivo al módulo de Ecommerce.
                         Puede gestionar todos los contenidos de la tienda
                         en línea, incluyendo la creación, edición y
@@ -42,7 +42,7 @@ reseñador, el estado y la fecha de creación.
 A continuación, se describe paso a paso cómo el Administrador puede
 visualizar, crear, editar y eliminar reseñas.
 
-2.1 Acceso a la Subsección de Mejores Reseñas
+### 2.1 Acceso a la Subsección de Mejores Reseñas
 
 **Paso 1: Navegar al módulo de Mejores Reseñas**
 

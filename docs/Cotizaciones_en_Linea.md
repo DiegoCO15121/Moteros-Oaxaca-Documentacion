@@ -19,18 +19,19 @@ roles de usuario:
   -----------------------------------------------------------------------
   **Rol**               **Permisos y Funciones**
   --------------------- -------------------------------------------------
-  Administrador     Tiene acceso completo al módulo de Cotizaciones.
+  **Administrador     Tiene acceso completo al módulo de Cotizaciones.**
                         Puede visualizar todas las cotizaciones en línea
                         del sistema, crear nuevas, editarlas, consultar
                         sus detalles y descargarlas.
 
-  Vendedor          Puede crear, visualizar, editar y descargar
+  **Vendedor**          Puede crear, visualizar, editar y descargar
                         cotizaciones dentro del sistema. Es el rol
                         responsable de generar cotizaciones en línea para
                         los clientes durante el proceso de venta. Es
                         importante recalcar que solo con este rol se
                         pueden editar o eliminar las cotizaciones en
                         línea.
+
   -----------------------------------------------------------------------
 
 ## 2. Gestión de Cotizaciones en línea

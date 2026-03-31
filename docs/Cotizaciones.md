@@ -14,19 +14,19 @@ editar, descargar y consultar los detalles de las cotizaciones.
 El módulo de Cotizaciones es accesible para los siguientes roles de
 usuario:
 
-  -----------------------------------------------------------------------
-  **Rol**               **Permisos y Funciones**
   --------------------- -------------------------------------------------
+  **Rol**               **Permisos y Funciones**
+
   **Administrador**     Tiene acceso completo al módulo de Cotizaciones.
                         Puede visualizar todas las cotizaciones del
                         sistema, crear nuevas, editarlas, consultar sus
                         detalles y descargarlas.
 
-  **Vendedor** Puede crear, visualizar, editar y descargar
+  **Vendedor**          Puede crear, visualizar, editar y descargar
                         cotizaciones dentro del sistema. Es el rol
                         responsable de generar cotizaciones para los
                         clientes durante el proceso de venta.
-  -----------------------------------------------------------------------
+  --------------------- -------------------------------------------------
 
 ## 2. Gestión de Cotizaciones
 
@@ -90,6 +90,7 @@ carrito del producto deseado para añadirlo a la cotización.
   mostrarán el ícono de carrito al pasar el cursor sobre ellos. Si un
   producto no muestra este ícono, indica que no cuenta con inventario
   disponible.
+  
   -----------------------------------------------------------------------
 
 **Paso 3: Revisar el carrito y guardar la cotización**

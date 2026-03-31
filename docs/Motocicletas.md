@@ -24,13 +24,13 @@ rol de Administrador. A continuación, se describe el rol relevante:
                         eliminarlos desde el dashboard del sistema.
   --------------------- -------------------------------------------------
 
-2\. Gestión de Motocicletas
+## 2. Gestión de Motocicletas
 
 A continuación, se describe paso a paso cómo el Administrador puede
 gestionar las motocicletas del sistema: visualizarlas, registrar nuevas,
 editarlas y eliminarlas.
 
-2.1 Acceso al Módulo de Motocicletas
+### 2.1 Acceso al Módulo de Motocicletas
 
 **Paso 1: Navegar al módulo**
 
@@ -59,7 +59,7 @@ Desde este dashboard es posible realizar las siguientes acciones:
 
 ![](/images/motocicletas2.png)
 
-2.3 Registrar una Nueva Motocicleta
+### 2.3 Registrar una Nueva Motocicleta
 
 **Paso 1: Abrir el formulario de nueva motocicleta**
 

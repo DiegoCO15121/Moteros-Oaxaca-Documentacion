@@ -22,10 +22,8 @@ export default function DocPage({ params }: Props) {
 
   const { content } = getDocBySlug(slug);
 
-  console.log("SLUG PAGE", slug);
-
   return (
-    <div className="prose prose-slate max-w-4xl mx-auto p-8">
+    <div className="prose prose-slate max-w-4xl mx-auto p-8  ">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

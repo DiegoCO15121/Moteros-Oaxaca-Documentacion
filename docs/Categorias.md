@@ -41,7 +41,7 @@ al dashboard de categorías.
 
 ![](/images/categorias1.png)
 
-2.2 Dashboard de Categorías
+### 2.2 Dashboard de Categorías
 
 Una vez dentro del módulo, el Administrador puede ver el listado
 completo de categorías registradas en el sistema. Cada categoría muestra
@@ -92,6 +92,7 @@ el botón \"Regresar\".
   **Nota:** El campo \"Nombre\" es obligatorio. Si se intenta guardar sin
   completarlo, el sistema mostrará un mensaje de advertencia y no
   permitirá continuar.
+
   -----------------------------------------------------------------------
 
 ### 2.4 Editar una Categoría
@@ -138,6 +139,7 @@ para que la categoría sea eliminada definitivamente del sistema.
   **Nota:** La eliminación de una categoría es una acción permanente e
   irreversible. Se recomienda verificar que la categoría no esté asociada
   a productos activos antes de proceder con su eliminación.
+  
   -----------------------------------------------------------------------
 
 ### 3. Resumen del Proceso
