@@ -16,8 +16,8 @@ específicos:
   -------------------- -----------------------------------------------
   **Rol**              **Permisos y Funciones**
 
-  **Seller             Es el rol responsable de gestionar y registrar
-  (Vendedor)**         las ventas en el sistema. Tiene acceso completo
+  **Vendedor**         Es el rol responsable de gestionar y registrar
+                      las ventas en el sistema. Tiene acceso completo
                        al flujo de venta descrito en este manual.
 
   **Administrador**    Tiene permisos para visualizar, editar y

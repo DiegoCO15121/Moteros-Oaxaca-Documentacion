@@ -22,7 +22,7 @@ usuario:
                         sistema, crear nuevas, editarlas, consultar sus
                         detalles y descargarlas.
 
-  **Vendedor (Seller)** Puede crear, visualizar, editar y descargar
+  **Vendedor** Puede crear, visualizar, editar y descargar
                         cotizaciones dentro del sistema. Es el rol
                         responsable de generar cotizaciones para los
                         clientes durante el proceso de venta.

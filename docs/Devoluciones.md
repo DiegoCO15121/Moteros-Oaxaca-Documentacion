@@ -3,7 +3,7 @@
 ## 1. Introducción
 
 El presente documento describe de manera detallada el proceso que debe
-seguir un usuario con el rol de vendedor (seller) para hacer la
+seguir un usuario con el rol de vendedor para hacer la
 devolución de un producto dentro del sistema web de Moteros Oaxaca. El
 objetivo de esta guía es proporcionar instrucciones claras y precisas
 que faciliten la operación del sistema.

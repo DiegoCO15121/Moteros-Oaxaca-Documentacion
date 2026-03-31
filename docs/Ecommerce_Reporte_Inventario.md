@@ -3,7 +3,7 @@
 ## 1. Introducción
 
 El presente documento describe de manera detallada el proceso que debe
-seguir un usuario con el rol de vendedor (seller) para ver los reportes
+seguir un usuario con el rol de vendedor para ver los reportes
 correspondientes al inventario de los productos dentro del sistema web
 de Moteros Oaxaca. El objetivo de esta guía es proporcionar
 instrucciones claras y precisas que faciliten la operación diaria del

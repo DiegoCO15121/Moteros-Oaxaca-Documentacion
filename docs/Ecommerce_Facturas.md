@@ -3,8 +3,7 @@
 ## 1. Introducción
 
 El presente documento describe de manera detallada el proceso que debe
-seguir un usuario con el rol de vendedor (seller) o administrador
-(admin) para registrar una facturación dentro del sistema web de Moteros
+seguir un usuario con el rol de vendedor o administrador para registrar una facturación dentro del sistema web de Moteros
 Oaxaca. El objetivo de esta guía es proporcionar instrucciones claras y
 precisas que faciliten la operación diaria del sistema.
 

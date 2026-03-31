@@ -20,7 +20,7 @@ usuario en el sistema de manera exitosa.
 **Paso 1: Iniciar Sesión como administrador**
 
 Se requiere de una cuenta de administrador del sistema para poder
-ingresar las credenciales de manera correcta dentro del login.
+ingresar las credenciales de manera correcta dentro del inicio de sesión.
 
 ![](/images/altaBajaUs1.png)
 
