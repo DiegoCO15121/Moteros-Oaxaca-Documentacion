@@ -10,12 +10,11 @@ export default function DocsLayout({
 }) {
   const slugs = getAllSlugs();
 
-  const sharedSlugs = ['Clientes', 'Cotizaciones', 'Cotizaciones_en_Linea'];
+  const sharedSlugs = ['Clientes', 'Cotizaciones', 'Cotizaciones_en_Linea', 'Facturas'];
   const sellerOnlySlugs = ['Apertura_de_Caja', 'Devoluciones', 'Solicitud_Producto', 'Traspasos'];
   const adminOnlySlugs = slugs.filter(slug => !sharedSlugs.includes(slug) && !sellerOnlySlugs.includes(slug));
 
   let userRole = 'admin'; 
-
 
   let filteredOtherSlugs: string[];
   let filteredEcommerceSlugs: string[];

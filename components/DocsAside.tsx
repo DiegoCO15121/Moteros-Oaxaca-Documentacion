@@ -45,6 +45,7 @@ export default function DocsAside({
               icon={faHouse}
               className="mr-2 text-red-500"
               size={"xl"}
+              
             />
             <span>Inicio</span>
           </div>

@@ -19,7 +19,7 @@ encuentra.
 ## 2. Flujo de Facturación
 
 A continuación, se describe paso a paso el proceso que debe seguir el
-usuario vendedor o administrador para registrar una venta de forma
+usuario vendedor o administrador para registrar una factura de forma
 exitosa en el sistema.
 
 **Paso 1: Facturas globales**
