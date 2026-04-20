@@ -3,7 +3,6 @@
 import { getIconForSlug } from "@/lib/getIconForSlug";
 import {
   faChevronDown,
-  faBagShopping,
   faChevronUp, faHouse
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,18 +10,24 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import SidebarLink from "./SidebarLink";
+import { SidebarSection } from "@/data/sidebarConfig";
 
 interface DocsAsideProps {
-  otherSlugs: string[];
-  ecommerceSlugs: string[];
+  sections: SidebarSection[];
 }
 
 export default function DocsAside({
-  otherSlugs,
-  ecommerceSlugs,
+  sections,
 }: DocsAsideProps) {
-  const [ecommerceExpanded, setEcommerceExpanded] = useState(false);
+  const [expandedSections, setExpandedSections] = useState<Record<number, boolean>>({});
   const pathname = usePathname();
+
+  const toggleSection = (index: number) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
     <aside className="w-72 border-r px-4 py-6 overflow-y-auto scrollbar-hide bg-black/90">
@@ -45,58 +50,65 @@ export default function DocsAside({
               icon={faHouse}
               className="mr-2 text-red-500"
               size={"xl"}
-              
             />
             <span>Inicio</span>
           </div>
         </Link>
-        {otherSlugs.map((slug) => {
-          const Icon = getIconForSlug(slug);
-          const isActive = pathname === `/docs/${slug}`;
-          return (
-            <div key={slug}>
-              <SidebarLink slug={slug} isActive={isActive} Icon={Icon} />
-            </div>
-          );
-        })}
       </div>
 
-      <div className="">
-        {ecommerceSlugs.length > 0 && (
-          <button
-            onClick={() => setEcommerceExpanded(!ecommerceExpanded)}
-            className="flex items-center justify-between text-[0.9rem] p-2 rounded 
-          hover:bg-slate-500/60 text-white w-full "
-          >
-            <div className="flex items-center">
-              <FontAwesomeIcon
-                icon={faBagShopping}
-                className="mr-2 text-red-500"
-                size={"xl"}
-              />
-              <span>Ecommerce</span>
-            </div>
+      {sections.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="mb-4">
+          {section.title && (
+            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 mt-3">
+              {section.title}
+            </h3>
+          )}
+          
+          {section.collapsible ? (
+            <div>
+              <button
+                onClick={() => toggleSection(sectionIndex)}
+                className="flex items-center justify-between text-[0.9rem] p-2 rounded 
+                hover:bg-slate-500/60 text-white w-full"
+              >
+                <span>{section.title}</span>
+                {expandedSections[sectionIndex] ? (
+                  <FontAwesomeIcon icon={faChevronUp} size="sm" />
+                ) : (
+                  <FontAwesomeIcon icon={faChevronDown} size="sm" />
+                )}
+              </button>
 
-            {ecommerceExpanded ? (
-              <FontAwesomeIcon icon={faChevronUp} />
-            ) : (
-              <FontAwesomeIcon icon={faChevronDown} />
-            )}
-          </button>
-        )}
-        {ecommerceExpanded && ecommerceSlugs.length > 0 && (
-          <div className="ml-4 mt-2 space-y-1">
-            {ecommerceSlugs.map((slug) => {
-              const isActive = pathname === `/docs/${slug}`;
-              return (
-                <div key={slug} className="ml-5">
-                  <SidebarLink slug={slug} isActive={isActive} />
+              {expandedSections[sectionIndex] && (
+                <div className="ml-4 mt-2 space-y-1">
+                  {section.items.map((item) => {
+                    const Icon = getIconForSlug(item.slug);
+                    const isActive = pathname === `/docs/${item.slug}`;
+                    return (
+                      <div key={item.slug} className="ml-2">
+                        <SidebarLink slug={item.slug} isActive={isActive} Icon={Icon} />
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+              )}
+            </div>
+          ) : (
+            <div className="space-y-1">
+              {section.items.map((item) => {
+                const Icon = getIconForSlug(item.slug);
+                const isActive = pathname === `/docs/${item.slug}`;
+                
+                return (
+                  <div key={item.slug}>
+                    <SidebarLink slug={item.slug} isActive={isActive} Icon={Icon} />
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      ))}
     </aside>
   );
 }

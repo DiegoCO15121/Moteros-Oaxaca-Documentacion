@@ -1,35 +1,19 @@
-import { getAllSlugs } from "@/lib/mdx";
+import { getSidebarConfig } from "@/data/sidebarConfig";
 import DocsAside from "../../components/DocsAside";
-
-type userRoleType = 'seller'  | 'admin'
+import { UserRole } from "@/data/sidebarConfig";
 
 export default function DocsLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const slugs = getAllSlugs();
+  const userRole: UserRole = 'admin';
 
-  const sharedSlugs = ['Clientes', 'Cotizaciones', 'Cotizaciones_en_Linea', 'Facturas', 'Productos_Negados'];
-  const sellerOnlySlugs = ['Apertura_de_Caja', 'Devoluciones', 'Solicitud_Producto', 'Traspasos', 'Productos'];
-  const adminOnlySlugs = slugs.filter(slug => !sharedSlugs.includes(slug) && !sellerOnlySlugs.includes(slug));
-
-  let userRole = 'admin'; 
-
-  let filteredOtherSlugs: string[];
-  let filteredEcommerceSlugs: string[];
-
-  if (userRole !== 'seller') {
-    filteredOtherSlugs = [...sharedSlugs, ...adminOnlySlugs].filter(slug => !slug.toLowerCase().includes("ecommerce"));
-    filteredEcommerceSlugs = slugs.filter(slug => slug.toLowerCase().includes("ecommerce"));
-  } else{
-    filteredOtherSlugs = [...sharedSlugs, ...sellerOnlySlugs].filter(slug => !slug.toLowerCase().includes("ecommerce"));
-    filteredEcommerceSlugs = [];
-  } 
+  const sidebarSections = getSidebarConfig(userRole);
 
   return (
     <div className="flex h-screen bg-neutral-100">
-      <DocsAside otherSlugs={filteredOtherSlugs} ecommerceSlugs={filteredEcommerceSlugs} />
+      <DocsAside sections={sidebarSections} />
 
       <main className="flex-1 overflow-y-auto ">
         {children}
