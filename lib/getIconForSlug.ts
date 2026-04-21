@@ -22,17 +22,14 @@ import {
   faBan,
   faMotorcycle,
   faCartShopping,
-  faFileLines,
-  faBook,
-  faBriefcase,
+  faFileLines, faBriefcase,
   faBarcode,
-  faBank,
-  faGear,
-  faShoppingBag,
+  faBank, faShoppingBag,
   faArrowsRotate,
   faBoxesStacked,
   faBoxOpen,
   faSwatchbook,
+  faPercent
 } from "@fortawesome/free-solid-svg-icons";
 
 export const getIconForSlug = (slug: string) => {
@@ -78,8 +75,8 @@ export const getIconForSlug = (slug: string) => {
   if (lowerSlug.includes("compra")) return faShoppingBag;
   if (lowerSlug.includes("cuentas") && lowerSlug.includes("banco"))
     return faBank;
-  if (lowerSlug.includes("configuracion") && lowerSlug.includes("razon"))
-    return faGear;
+  /* if (lowerSlug.includes("configuracion") && lowerSlug.includes("razon"))
+    return faGear; */
   if (lowerSlug.includes("kardex")) return faBoxesStacked;
   if (lowerSlug.includes("auditoria") && lowerSlug.includes("inventario"))
     return faBoxOpen;
@@ -94,6 +91,13 @@ export const getIconForSlug = (slug: string) => {
   if (lowerSlug.includes("categorias")) return faBoxArchive;
   if (lowerSlug.includes("motocicletas")) return faMotorcycle;
   if (lowerSlug.includes("reabastecimiento")) return faCartShopping;
+  if (lowerSlug.includes("descuentos")) return faPercent;
+  if (lowerSlug.includes("ventas")) {
+    if(lowerSlug.includes('credito')) {
+      return faCreditCard
+    }
+    return faTag
+  }
 
   if (lowerSlug.includes("cotizaciones")) {
     if (lowerSlug.includes("linea")) {

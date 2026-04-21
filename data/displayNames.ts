@@ -10,6 +10,7 @@ export const displayNames: Record<string, string> = {
   "Compras": "Compras",
   "Configuracion_Razon_Social": "Configuración Razón Social",
   "Cotizaciones_en_Linea": "Cotizaciones en Línea",
+  "Ventas": "Ventas",
   "Cotizaciones": "Cotizaciones",
   "Cuentas_Banco": "Cuentas de Banco",
   "Devoluciones": "Devoluciones",
@@ -47,6 +48,8 @@ export const displayNames: Record<string, string> = {
   "Reportes_Performance_Empleados": "Performance de Empleados",
   "Reporte_Inventario": "Inventario y Ubicación",
   "Reportes_Productos_sin_Ventas": "Productos sin ventas",
+  "Reportes_Detallado": "Detallado",
+  "Reportes_Clientes": "Clientes",
   
 
 };

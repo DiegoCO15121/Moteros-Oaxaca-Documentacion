@@ -3,7 +3,8 @@
 import { getIconForSlug } from "@/lib/getIconForSlug";
 import {
   faChevronDown,
-  faChevronUp, faHouse
+  faChevronUp,
+  faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
@@ -16,10 +17,10 @@ interface DocsAsideProps {
   sections: SidebarSection[];
 }
 
-export default function DocsAside({
-  sections,
-}: DocsAsideProps) {
-  const [expandedSections, setExpandedSections] = useState<Record<number, boolean>>({});
+export default function DocsAside({ sections }: DocsAsideProps) {
+  const [expandedSections, setExpandedSections] = useState<
+    Record<number, boolean>
+  >({});
   const pathname = usePathname();
 
   const toggleSection = (index: number) => {
@@ -56,59 +57,78 @@ export default function DocsAside({
         </Link>
       </div>
 
-      {sections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="mb-4">
-          {section.title && (
-            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 mt-3">
-              {section.title}
-            </h3>
-          )}
-          
-          {section.collapsible ? (
-            <div>
-              <button
-                onClick={() => toggleSection(sectionIndex)}
-                className="flex items-center justify-between text-[0.9rem] p-2 rounded 
-                hover:bg-slate-500/60 text-white w-full"
-              >
-                <span>{section.title}</span>
-                {expandedSections[sectionIndex] ? (
-                  <FontAwesomeIcon icon={faChevronUp} size="sm" />
-                ) : (
-                  <FontAwesomeIcon icon={faChevronDown} size="sm" />
-                )}
-              </button>
+      {sections.map((section, sectionIndex) => {
+        const Icon = getIconForSlug(section.title);
 
-              {expandedSections[sectionIndex] && (
-                <div className="ml-4 mt-2 space-y-1">
-                  {section.items.map((item) => {
-                    const Icon = getIconForSlug(item.slug);
-                    const isActive = pathname === `/docs/${item.slug}`;
-                    return (
-                      <div key={item.slug} className="ml-2">
-                        <SidebarLink slug={item.slug} isActive={isActive} Icon={Icon} />
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="space-y-1">
-              {section.items.map((item) => {
-                const Icon = getIconForSlug(item.slug);
-                const isActive = pathname === `/docs/${item.slug}`;
-                
-                return (
-                  <div key={item.slug}>
-                    <SidebarLink slug={item.slug} isActive={isActive} Icon={Icon} />
+        return (
+          <div key={sectionIndex} className="mb-4">
+             
+            {section.title && !section.collapsible && (
+              <h3 className="text-xs ml-3 font-semibold text-slate-500 uppercase tracking-wider mb-2 mt-3">
+                {section.title}
+              </h3>
+            )}
+
+            {section.collapsible ? (
+              <div>
+                <button
+                  onClick={() => toggleSection(sectionIndex)}
+                  className="flex items-center justify-between text-[0.9rem] p-2 rounded 
+                hover:bg-slate-500/60 text-white w-full"
+                >
+                  <div >
+                    <FontAwesomeIcon
+                      icon={Icon}
+                      className="mr-2 text-red-500"
+                      size={"xl"}
+                    />
+                    <span>{section.title}</span>
                   </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      ))}
+                  {expandedSections[sectionIndex] ? (
+                    <FontAwesomeIcon icon={faChevronUp} size="sm" />
+                  ) : (
+                    <FontAwesomeIcon icon={faChevronDown} size="sm" />
+                  )}
+                </button>
+
+                {expandedSections[sectionIndex] && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    {section.items.map((item) => {
+                      /* const Icon = getIconForSlug(item.slug); */
+                      const isActive = pathname === `/docs/${item.slug}`;
+                      return (
+                        <div key={item.slug} className="ml-2">
+                          <SidebarLink
+                            slug={item.slug}
+                            isActive={isActive} /* Icon={Icon} */
+                          />
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="space-y-1">
+                {section.items.map((item) => {
+                  const Icon = getIconForSlug(item.slug);
+                  const isActive = pathname === `/docs/${item.slug}`;
+
+                  return (
+                    <div key={item.slug}>
+                      <SidebarLink
+                        slug={item.slug}
+                        isActive={isActive}
+                        Icon={Icon}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </aside>
   );
 }
