@@ -15,9 +15,24 @@ export interface SidebarSection {
 export const sidebarConfig: Record<UserRole, SidebarSection[]> = {
   admin: [
     {
-      title: "CAPITAL HUMANO",
+      title: "Capital Humano",
       visibleTo: ["admin"],
-      items: [{ slug: "Centro_de_Capital_Humano" }],
+      collapsible: true,
+      items: [
+        { slug: "Capital_Humano_Reporte_General" },
+        { slug: "Capital_Humano_Horarios_Sucursal" },
+        { slug: "Capital_Humano_Calendario_General" },
+        { slug: "Capital_Humano_Puestos" },
+        { slug: "Capital_Humano_Puestos_Sucursal" },
+        { slug: "Capital_Humano_Reporte_Chequeo" },
+        { slug: "Capital_Humano_Permisos" },
+        { slug: "Capital_Humano_Temporadas_Bloqueadas" },
+        { slug: "Capital_Humano_Cumpleanos" },
+        { slug: "Capital_Humano_Tipo_Documento" },
+        { slug: "Capital_Humano_Expediente" },
+        { slug: "Capital_Humano_Vacaciones" },
+        { slug: "Capital_Humano_Incidencias" },
+      ],
     },
     {
       title: "TIENDA",
@@ -86,7 +101,13 @@ export const sidebarConfig: Record<UserRole, SidebarSection[]> = {
     {
       title: "CONFIGURACIÓN",
       visibleTo: ["admin"],
-      items: [{ slug: "Usuarios" }],
+      items: [
+        { slug: "Administradores" },
+        { slug: "Equipo" },
+        { slug: "Roles" },
+        { slug: "Usuarios" },
+        { slug: "General" },
+      ],
     },
   ],
   seller: [

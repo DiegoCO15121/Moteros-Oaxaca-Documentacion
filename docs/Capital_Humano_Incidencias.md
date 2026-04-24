@@ -1,0 +1,49 @@
+# Centro de Capital Humano: Incidencias
+
+## 1\. Introducción
+
+El presente documento describe de manera detallada el proceso que debe seguir un usuario con el rol de Administrador para gestionar las incidencias dentro del módulo de Centro de Capital Humano del sistema web de Moteros Oaxaca. Las incidencias sirven para que los vendedores reporten situaciones fuera de su control y afectan a su desempeño en el trabajo.
+
+### 1.1 Rol Requerido
+
+El módulo de Centro de Capital Humano y la subsección de Incidencias son accesibles únicamente para usuarios con el rol de Administrador. A continuación, se describe el rol relevante:
+
+### 1.2 Acceso al Módulo de Centro de Capital Humano
+
+El Centro de Capital Humano agrupa diversas subsecciones relacionadas con la gestión del personal de la empresa. Para acceder a cualquiera de ellas, el Administrador debe seguir los mismos pasos descritos a continuación.
+
+**Paso 1: Navegar al módulo desde el sidebar**
+
+El Administrador debe dirigirse al menú lateral (sidebar) del sistema y hacer clic en la opción "Centro de Capital Humano". Al seleccionarla, el sistema redirige automáticamente al dashboard principal del módulo.
+
+![](/images/centroCapitalHum1.png)
+
+**Paso 2: Seleccionar la subsección de Puestos**
+
+Dentro del dashboard del Centro de Capital Humano, el Administrador puede visualizar todas las subsecciones disponibles organizadas en tarjetas. Para acceder a la gestión de puestos, debe hacer clic en la tarjeta "Incidencias" o presionar el botón "Ir" correspondiente.
+
+![](/images/centroCapitalHum2.png)
+
+## 2\. Gestión de Incidencias
+
+A continuación, se describe paso a paso cómo el Administrador puede gestionar las incidencias dentro del sistema
+
+### 2.1 Dashboard de Incidencias
+
+Una vez dentro de la subsección, el sistema presenta una tabla con todas las incidencias hechas. Cada registro muestra el nombre de quien hizo la incidencia, la fecha, descripción y acciones. El usuario puede filtrar las incidencias según un rango de fechas dado.
+
+![](/images/incidencias1.png)
+
+### 2.2 Detalles de Incidencias
+
+**Paso 1: Ver detalles de incidencias**
+
+El usuario debe presionar el botón de “Ver”, para que el sistema muestre los detalles de la incidencia deseada.
+
+![](/images/incidencias2.png)
+
+### 2.2 Eliminar Incidencia
+
+Para que el usuario pueda eliminar incidencias debe presionar el botón de eliminar en la incidencia deseada.
+
+![](/images/incidencias3.png)

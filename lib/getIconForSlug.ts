@@ -29,7 +29,11 @@ import {
   faBoxesStacked,
   faBoxOpen,
   faSwatchbook,
-  faPercent
+  faPercent,
+  faShapes,
+  faUsersGear,
+  faLock,
+  faGear
 } from "@fortawesome/free-solid-svg-icons";
 
 export const getIconForSlug = (slug: string) => {
@@ -39,7 +43,7 @@ export const getIconForSlug = (slug: string) => {
     return faBriefcase;
   if (lowerSlug.includes("ecommerce") || lowerSlug.includes("tienda"))
     return faShoppingCart;
-  if (lowerSlug.includes("cliente")) return faUserGroup;
+  if (lowerSlug.includes("cliente") || lowerSlug.includes("admin")) return faUserGroup;
   if (lowerSlug.includes("productos")) {
     if (lowerSlug.includes("negados")) {
       return faBan;
@@ -60,6 +64,10 @@ export const getIconForSlug = (slug: string) => {
   if (lowerSlug.includes("producto") || lowerSlug.includes("solicitud"))
     return faBox;
   if (lowerSlug.includes("traspaso")) return faRightLeft;
+  if (lowerSlug.includes("rol")) return faLock;
+  if (lowerSlug.includes("general")) return faGear;
+  if (lowerSlug.includes("equipo")) return faUsersGear;
+  if (lowerSlug.includes("capital") && lowerSlug.includes("humano")) return faShapes;
   if (lowerSlug.includes("devolucion")) return faTruck;
   if (lowerSlug.includes("cupon")) return faCreditCard;
   if (lowerSlug.includes("pregunta") || lowerSlug.includes("reseña"))

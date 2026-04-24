@@ -9,8 +9,9 @@ El presente documento describe de manera detallada el proceso que debe seguir un
 El módulo de Productos en Exhibición es accesible únicamente para usuarios con el rol de Administrador. A continuación, se describe el rol relevante:
 
 
-| **Rol** | **Permisos y Funciones** |
-| **Administrador** | Tiene acceso completo al módulo de Productos en Exhibición. Puede visualizar el listado de productos, registrar nuevos artículos en exhibición, editar los existentes, eliminarlos y consultar los detalles de los productos ya vendidos. |
+  --------------------- -------------------------------------------------
+ **Administrador**  Tiene acceso completo al módulo de Productos en Exhibición. Puede visualizar el listado de productos, registrar nuevos artículos en exhibición, editar los existentes, eliminarlos y consultar los detalles de los productos ya vendidos.
+   --------------------- -------------------------------------------------
 
 ## 2. Gestión de Productos en Exhibición
 
