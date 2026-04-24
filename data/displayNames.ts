@@ -66,4 +66,7 @@ export const displayNames: Record<string, string> = {
   Equipo: 'Equipo',
   Roles: 'Roles',
   General: 'General',
+  Reloj_Checador: 'Reloj Checador',
+  Bitacora_Tienda: 'Bitácora de mi Tienda',
+  Horario_Mensual: 'Horario Mensual',
 };

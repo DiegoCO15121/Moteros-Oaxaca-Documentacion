@@ -3,7 +3,7 @@
 ## 1. Introducción
 
 El presente documento describe de manera detallada el proceso que debe
-seguir un usuario con el rol de vendedor para ver los reportes
+seguir un usuario con el rol de vendedor o administrador para ver los reportes
 correspondientes al inventario de los productos dentro del sistema web
 de Moteros Oaxaca. El objetivo de esta guía es proporcionar
 instrucciones claras y precisas que faciliten la operación diaria del
@@ -12,7 +12,7 @@ sistema.
 ## 2. Flujo de Reportes de Inventario 
 
 A continuación, se describe paso a paso el proceso que debe seguir el
-usuario vendedor para consultar el inventario de productos de forma
+usuario vendedor/administrador para consultar el inventario de productos de forma
 exitosa en el sistema.
 
 **Paso 1: Inventario y Ubicación**

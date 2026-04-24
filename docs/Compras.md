@@ -2,7 +2,7 @@
 
 ## 1. Introducción
 
-El presente documento describe de manera detallada el proceso que debe seguir un usuario con el rol de administrador para gestionar compras dentro del sistema web de Moteros Oaxaca. El objetivo de esta guía es proporcionar instrucciones claras y precisas que faciliten la operación del módulo de compras.
+El presente documento describe de manera detallada el proceso que debe seguir un usuario con el rol de administrador o vendedor para gestionar compras dentro del sistema web de Moteros Oaxaca. El objetivo de esta guía es proporcionar instrucciones claras y precisas que faciliten la operación del módulo de compras.
 
 ## 2. Flujo de Compras
 

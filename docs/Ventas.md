@@ -4,10 +4,6 @@
 
 El presente documento describe de manera detallada el uso del módulo de Ventas dentro del sistema web de Moteros Oaxaca. Este módulo permite consultar el historial de ventas registradas en el sistema, visualizar el detalle de cada transacción y realizar acciones como imprimir el ticket, facturar la venta o compartir el comprobante por WhatsApp. Esta guía está dirigida a los usuarios con rol de Administrador y Vendedor.
 
-### 1.1 Roles del Sistema
-
-El módulo de Ventas es accesible para los siguientes roles de usuario:
-
 ## 2. Uso del Módulo de Ventas
 
 A continuación se describe paso a paso cómo el usuario puede consultar el historial de ventas y realizar las acciones disponibles sobre cada registro.

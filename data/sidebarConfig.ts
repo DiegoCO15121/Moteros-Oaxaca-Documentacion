@@ -110,28 +110,40 @@ export const sidebarConfig: Record<UserRole, SidebarSection[]> = {
       ],
     },
   ],
+
   seller: [
-    {
-      title: "TIENDA",
+     {
+      title: "Capital Humano",
       visibleTo: ["seller"],
       items: [
-        { slug: "Productos" },
-        { slug: "Traspasos" },
-        { slug: "Apertura_de_Caja" },
-        { slug: "Devoluciones" },
-        { slug: "Solicitud_Producto" },
+        { slug: "Reloj_Checador" },
+        { slug: "Horario_Mensual" },
+        { slug: "Bitacora_Tienda" },
+        
       ],
     },
     {
-      title: "",
+      title: "Tienda",
       visibleTo: ["seller"],
       items: [
+        { slug: "Traspasos" },
+        { slug: "Productos" },
+        { slug: "Productos_Negados" },
+        { slug: "Compras" },
         { slug: "Clientes" },
         { slug: "Cotizaciones" },
         { slug: "Cotizaciones_en_Linea" },
+        { slug: "Ventas" },
+        { slug: "Ventas_Credito" },
         { slug: "Facturas" },
-        { slug: "Productos_Negados" },
       ],
+    },
+
+    {
+      title: "Reportes",
+      visibleTo: ["admin"],
+      collapsible: true,
+      items: [{ slug: "Reporte_Inventario" }],
     },
   ],
 };

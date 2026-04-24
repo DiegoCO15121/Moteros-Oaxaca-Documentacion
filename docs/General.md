@@ -7,7 +7,7 @@ El presente documento describe de manera detallada el proceso que debe seguir un
 
 ### 1.1 Rol Requerido para la Gestión
 
-El módulo de General es accesible únicamente para usuarios con el rol de Administrador. A continuación, se describe el rol con permisos de gestión.
+El módulo de General es accesible únicamente para usuarios con el rol de Administrador.
 
 ## 2\. Gestión de Configuración General
 

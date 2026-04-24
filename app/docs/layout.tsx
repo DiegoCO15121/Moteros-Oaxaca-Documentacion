@@ -7,7 +7,7 @@ export default function DocsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const userRole: UserRole = 'admin';
+  const userRole: UserRole = 'seller';
 
   const sidebarSections = getSidebarConfig(userRole);
 

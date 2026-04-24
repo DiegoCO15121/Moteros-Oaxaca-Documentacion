@@ -33,7 +33,10 @@ import {
   faShapes,
   faUsersGear,
   faLock,
-  faGear
+  faGear,
+  faQrcode,
+  faCalendarDays,
+  faBook
 } from "@fortawesome/free-solid-svg-icons";
 
 export const getIconForSlug = (slug: string) => {
@@ -41,6 +44,8 @@ export const getIconForSlug = (slug: string) => {
 
   if (lowerSlug.includes("centro") && lowerSlug.includes("capital"))
     return faBriefcase;
+  if (lowerSlug.includes("bitacora") && lowerSlug.includes("tienda")) return faBook;
+
   if (lowerSlug.includes("ecommerce") || lowerSlug.includes("tienda"))
     return faShoppingCart;
   if (lowerSlug.includes("cliente") || lowerSlug.includes("admin")) return faUserGroup;
@@ -81,6 +86,9 @@ export const getIconForSlug = (slug: string) => {
     return faBarcode;
   if (lowerSlug.includes("marca")) return faSwatchbook;
   if (lowerSlug.includes("compra")) return faShoppingBag;
+  if (lowerSlug.includes("reloj")) return faQrcode;
+
+  if (lowerSlug.includes("horario") && lowerSlug.includes("mensual")) return faCalendarDays;
   if (lowerSlug.includes("cuentas") && lowerSlug.includes("banco"))
     return faBank;
   /* if (lowerSlug.includes("configuracion") && lowerSlug.includes("razon"))
